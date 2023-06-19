@@ -11,6 +11,10 @@ import CloseIcon from "../icons/close.svg";
 import MaskIcon from "../icons/mask.svg";
 import PluginIcon from "../icons/plugin.svg";
 
+// loee
+import PersonIcon from "../icons/person.svg";
+import Draw from "../icons/draw.svg";
+
 import Locale from "../locales";
 
 import { useAppConfig, useChatStore } from "../store";
@@ -138,11 +142,24 @@ export function SideBar(props: { className?: string }) {
           onClick={() => navigate(Path.NewChat, { state: { fromHome: true } })}
           shadow
         />
-        <IconButton
+        {/* loee */}
+        {/* <IconButton
           icon={<PluginIcon />}
           text={shouldNarrow ? undefined : Locale.Plugin.Name}
           className={styles["sidebar-bar-button"]}
           onClick={() => showToast(Locale.WIP)}
+          shadow
+        /> */}
+
+        {/* loee */}
+        <IconButton
+          icon={<Draw />}
+          text={shouldNarrow ? undefined : Locale.Drawing.drawing}
+          className={styles["sidebar-bar-button"]}
+          onClick={() => {
+            navigate(Path.Img);
+          }}
+          // onClick={() => showToast(Locale.WIP)}
           shadow
         />
       </div>
@@ -175,11 +192,12 @@ export function SideBar(props: { className?: string }) {
               <IconButton icon={<SettingsIcon />} shadow />
             </Link>
           </div>
-          <div className={styles["sidebar-action"]}>
+          {/* loee */}
+          {/* <div className={styles["sidebar-action"]}>
             <a href={REPO_URL} target="_blank">
               <IconButton icon={<GithubIcon />} shadow />
             </a>
-          </div>
+          </div> */}
         </div>
         <div>
           <IconButton
@@ -192,6 +210,17 @@ export function SideBar(props: { className?: string }) {
               } else {
                 navigate(Path.NewChat);
               }
+            }}
+            shadow
+          />
+        </div>
+        {/* loee */}
+        <div>
+          <IconButton
+            icon={<PersonIcon />}
+            text={shouldNarrow ? undefined : Locale.Home.Person}
+            onClick={() => {
+              navigate(Path.Person);
             }}
             shadow
           />

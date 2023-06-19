@@ -51,6 +51,15 @@ const MaskPage = dynamic(async () => (await import("./mask")).MaskPage, {
   loading: () => <Loading noLogo />,
 });
 
+// loee
+const Person = dynamic(async () => (await import("./person")).Chat, {
+  loading: () => <Loading noLogo />,
+});
+
+const Img = dynamic(async () => (await import("./img")).Chat, {
+  loading: () => <Loading noLogo />,
+});
+
 export function useSwitchTheme() {
   const config = useAppConfig();
 
@@ -142,6 +151,9 @@ function Screen() {
               <Route path={Path.Masks} element={<MaskPage />} />
               <Route path={Path.Chat} element={<Chat />} />
               <Route path={Path.Settings} element={<Settings />} />
+              {/* loee */}
+              <Route path={Path.Person} element={<Person />} />
+              <Route path={Path.Img} element={<Img />} />
             </Routes>
           </div>
         </>

@@ -94,6 +94,8 @@ const cn = {
     DeleteChat: "确认删除选中的对话？",
     DeleteToast: "已删除会话",
     Revert: "撤销",
+    // loee
+    Person: "个人中心",
   },
   Settings: {
     Title: "设置",
@@ -276,6 +278,12 @@ const cn = {
     Close: "关闭",
     Create: "新建",
     Edit: "编辑",
+  },
+  // loee
+  Drawing: {
+    drawing: "AI绘图",
+    translate: "翻译",
+    generate: "生成",
   },
 };
 
