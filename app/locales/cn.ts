@@ -284,6 +284,8 @@ const cn = {
     drawing: "AI绘图",
     translate: "翻译",
     generate: "生成",
+    txt2img: "文本转图",
+    img2img: "图转漫画",
   },
 };
 

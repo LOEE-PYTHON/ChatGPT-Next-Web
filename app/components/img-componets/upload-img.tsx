@@ -3,6 +3,7 @@ import { LoadingOutlined, PlusOutlined } from "@ant-design/icons";
 import { message, Upload } from "antd";
 import type { UploadChangeParam } from "antd/es/upload";
 import type { RcFile, UploadFile, UploadProps } from "antd/es/upload/interface";
+import imgStyle from "../img.module.scss";
 
 const getBase64 = (img: RcFile, callback: (url: string) => void) => {
   const reader = new FileReader();
@@ -43,9 +44,9 @@ const App: React.FC = () => {
   };
 
   const uploadButton = (
-    <div>
+    <div className={imgStyle.imgUpload}>
       {loading ? <LoadingOutlined /> : <PlusOutlined />}
-      <div style={{ marginTop: 8 }}>Upload</div>
+      <div style={{ marginTop: 8 }}>图片上传</div>
     </div>
   );
 

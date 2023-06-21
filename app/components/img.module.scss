@@ -1,0 +1,41 @@
+@import "../styles/animation.scss";
+
+
+
+// loee
+
+.themeAuto{
+  color: var(--black);
+}
+
+
+.ant-tabs-tab {
+  color: var(--black);
+}
+
+.ant-tabs-tab.ant-tabs-tab-active {
+  color: var(--white);
+}
+.textArea-black textarea {
+  background-color: var(--white) !important;
+  color: var(--black) !important; // 设置文本颜色为白色，以便在黑色背景上看清楚
+}
+.textArea-black textarea::placeholder {
+  color: var(--black)  !important;
+}
+
+.radioButton{
+  color: var(--black);
+}
+
+.alertCard{
+  color: var(--black);
+  background-color: var(--white);
+}
+.alertCardTitle{
+  color: var(--black) !important;
+}
+
+.imgUpload{
+  color: var(--black);
+}

@@ -96,6 +96,8 @@ const en: LocaleType = {
     DeleteChat: "Confirm to delete the selected conversation?",
     DeleteToast: "Chat Deleted",
     Revert: "Revert",
+    // loee
+    Person: "Person",
   },
   Settings: {
     Title: "Settings",
@@ -279,6 +281,14 @@ const en: LocaleType = {
     Close: "Close",
     Create: "Create",
     Edit: "Edit",
+  },
+  // loee
+  Drawing: {
+    drawing: "AiDrawing",
+    translate: "Translate",
+    generate: "Generate",
+    txt2img: "txt2img",
+    img2img: "img2img",
   },
 };
 
